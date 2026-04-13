@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/teaser.png" alt="junhua-plugins — A Claude Code Marketplace" width="100%" />
+</p>
+
 # junhua-plugins
 
 A Claude Code marketplace hosting plugins by [@junhua](https://github.com/junhua).
