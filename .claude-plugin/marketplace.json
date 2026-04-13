@@ -1,0 +1,38 @@
+{
+  "name": "junhua-plugins",
+  "owner": {
+    "name": "junhua",
+    "email": "junhua.viva@gmail.com"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by junhua",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "super-ralph",
+      "description": "Unified autonomous development workflow. Design, plan, build, repair, verify, release, and e2e epic execution — all fire-and-forget. Domain-aware repair with hotfix flow.",
+      "source": {
+        "source": "github",
+        "repo": "junhua/super-ralph"
+      },
+      "category": "development",
+      "keywords": [
+        "ralph-loop",
+        "superpowers",
+        "autonomous",
+        "fire-and-forget",
+        "tdd",
+        "pr-review",
+        "browser-verification",
+        "release",
+        "e2e",
+        "epic",
+        "staging",
+        "hotfix",
+        "domain-aware",
+        "repair-pipeline"
+      ]
+    }
+  ]
+}
