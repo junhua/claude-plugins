@@ -17,7 +17,13 @@ A Claude Code marketplace hosting plugins by [@junhua](https://github.com/junhua
 
 ### super-ralph
 
-Unified autonomous development workflow. Design, plan, build, repair, verify, release, and e2e epic execution — all fire-and-forget. Domain-aware repair with hotfix flow.
+Design-first autonomous development workflow.
+
+- `/super-ralph:design` produces implementation-ready epics with `[STORY]` + `[BE]` + `[FE]` + `[INT]` sub-issues, full Gherkin AC (≥3 scenarios including `[SECURITY]`), Shared Contracts, and exact TDD tasks that the build phase copies verbatim.
+- **`--local` mode** (v0.11.0) writes the entire epic + all stories into a single `docs/epics/<slug>.md` file and skips GitHub issue creation — useful for iterative design, spikes, and internal work.
+- **`/super-ralph:improve-design "<prompt>"`** (v0.11.0) takes a single natural-language prompt, autonomously resolves the target epic (local or GitHub), interprets feedback into structured changes, applies conservative edits, and re-validates. Shipped stories are immutable.
+- `/build-story`, `/e2e`, `/review-design`, `/build` auto-detect local vs GitHub from the argument shape (`docs/epics/<slug>.md#story-N` vs `#123`).
+- Fire-and-forget pipelines: build → review-fix → verify → finalise → release. Domain-aware repair with hotfix flow.
 
 - Source: [junhua/super-ralph](https://github.com/junhua/super-ralph)
 - Category: development
