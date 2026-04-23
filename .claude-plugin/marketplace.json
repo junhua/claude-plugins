@@ -14,7 +14,9 @@
       "description": "Design-first autonomous development workflow. /design produces implementation-ready epics with [STORY]/[BE]/[FE]/[INT] sub-issues. v0.11.0 adds --local mode (write entire plan to a single markdown file, skip GitHub) and /improve-design (single-prompt adjustments to existing designs). Fire-and-forget build → review → verify → release pipelines. Domain-aware repair with hotfix flow.",
       "source": {
         "source": "github",
-        "repo": "junhua/super-ralph"
+        "repo": "junhua/super-ralph",
+        "ref": "v0.14.2",
+        "sha": "e1cf62f6a14bfc23bf2644b421171f5c72aabea7"
       },
       "category": "development",
       "keywords": [
