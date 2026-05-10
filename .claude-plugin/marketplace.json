@@ -41,6 +41,37 @@
         "status-dashboard",
         "auto-init"
       ]
+    },
+    {
+      "name": "forth-ai-harness",
+      "description": "Junhua's technical-cofounder-in-a-plugin for ForthAI Work — 11 slash commands (/fbrainstorm /fspec /fdesign /fbuild /fpolish /ftest /ffix /flaunch /fretro /fdream /fhelp) with Claude+Codex dual-AI collaboration via the --codex flag. Each command is a /loop-style convergence loop until both Junhua and the AI are 100% satisfied. /fdream is the recursive cofounder pass — the plugin reads its own memory and improves itself with semver-correct version bumps. Cross-task memory layer at .claude/forth-ai-harness-memory/. Linear is SSoT; artifacts are AI-readable markdown sized to fit one 1M-token context window.",
+      "source": {
+        "source": "github",
+        "repo": "Forth-AI/forthai-harness",
+        "commit": "222ee192d1e26d2fbc5bce94760b74acbc81e14c",
+        "sha": "222ee192d1e26d2fbc5bce94760b74acbc81e14c"
+      },
+      "category": "development",
+      "keywords": [
+        "cofounder-mode",
+        "discovery-and-scoping",
+        "spec-driven-development",
+        "behavior-driven-development",
+        "subagent-driven",
+        "convergence-loop",
+        "claude-codex-collaboration",
+        "dual-ai",
+        "linear-ssot",
+        "playwright-bdd",
+        "production-readiness",
+        "ai-readiness",
+        "context-budget",
+        "vertical-slice",
+        "tshirt-sizing",
+        "tdd",
+        "fire-and-forget",
+        "forthai"
+      ]
     }
   ]
 }
