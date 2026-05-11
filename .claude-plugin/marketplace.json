@@ -44,12 +44,12 @@
     },
     {
       "name": "forth-ai-harness",
-      "description": "Technical-cofounder-in-a-plugin for ForthAI Work. Twelve slash commands take a rough idea from discovery to a merged, deployed, polished product: /finit (setup) /fbrainstorm /fspec /fdesign /fbuild /fpolish /ftest /ffix /flaunch /fretro /fdream /fhelp. Each command is a convergence loop with polish-exhaustion enforced. Optional Claude+Codex dual-AI collaboration via --codex; works in Claude-only mode for users without Codex. Cross-task memory layer at .claude/forth-ai-harness-memory/. Linear is SSoT; artifacts are AI-readable markdown.",
+      "description": "Technical-cofounder-in-a-plugin for ForthAI Work. Twelve slash commands take a rough idea from discovery to a merged, deployed, polished product: /finit (setup) /fbrainstorm /fspec /fdesign /fbuild /fpolish /ftest /ffix /flaunch /fretro /fdream /fhelp. Each command is a convergence loop with polish-exhaustion enforced. Optional Claude+Codex dual-AI collaboration via --codex; works in Claude-only mode for users without Codex. Cross-project memory layer at ~/.claude/forth-ai-harness-memory/ auto-syncs to Forth-AI/forthai-harness-memory so /fdream learns across all your projects. Linear is SSoT; artifacts are AI-readable markdown.",
       "source": {
         "source": "github",
         "repo": "Forth-AI/forthai-harness",
-        "ref": "v0.1.0",
-        "sha": "a0e7711caa2bdf68155dc690edaa13ba4a11cbdb"
+        "ref": "v0.2.0",
+        "sha": "db51dbe15fe7043e5e7a5ad63f7f3f1b11781ebb"
       },
       "category": "development",
       "keywords": [
