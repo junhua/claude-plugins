@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "super-ralph",
-      "description": "Design-first autonomous development workflow. /design produces implementation-ready epics with [STORY]/[BE]/[FE]/[INT] sub-issues. v0.11.0 adds --local mode (write entire plan to a single markdown file, skip GitHub) and /improve-design (single-prompt adjustments to existing designs). Fire-and-forget build → review → verify → release pipelines. Domain-aware repair with hotfix flow.",
+      "description": "Design-first autonomous development workflow. /design produces implementation-ready epics with [STORY]/[BE]/[FE]/[INT] sub-issues. v0.11.0 adds --local mode (write entire plan to a single markdown file, skip GitHub) and /improve-design (single-prompt adjustments to existing designs). Fire-and-forget build \u2192 review \u2192 verify \u2192 release pipelines. Domain-aware repair with hotfix flow.",
       "source": {
         "source": "github",
         "repo": "junhua/super-ralph",
@@ -44,12 +44,12 @@
     },
     {
       "name": "forth-ai-harness",
-      "description": "Technical-cofounder-in-a-plugin for ForthAI Work. Twelve slash commands take a rough idea from discovery to a merged, deployed, polished product: /finit (setup) /fbrainstorm /fspec /fdesign /fbuild /fpolish /ftest /ffix /flaunch /fretro /fdream /fhelp. Each command is a convergence loop with polish-exhaustion enforced. Optional Claude+Codex dual-AI collaboration via --codex; works in Claude-only mode for users without Codex. Cross-project memory layer at ~/.claude/forth-ai-harness-memory/ auto-syncs to Forth-AI/forthai-harness-memory so /fdream learns across all your projects. Linear is SSoT; artifacts are AI-readable markdown.",
+      "description": "Technical-cofounder-in-a-plugin for ForthAI Work. Thirteen slash commands take a rough idea from discovery to a merged, deployed, polished product: /finit /fbrainstorm /fspec /fdesign /fbuild /fpolish /ftest /ffix /flaunch /fautopilot /fretro /fdream /fhelp. Three lifecycles (Build/Fix/Hotfix) auto-routed from /goal; every PR passes a mandatory Codex review gate (0 P0+P1+APPROVE). /fautopilot is an AIPA autopilot run-loop with an engine-evaluated READ\u2192DRY_RUN\u2192COMMIT two-phase-write gate (human approval non-bypassable). Four on-demand domain packs (AIPA, enterprise-integration ERP/CRM connectors, comms-platforms WhatsApp/Telegram/Slack/WeChat-Work/Lark, finance intl+China) plug in with zero always-loaded cost. Optional Claude+Codex dual-AI via --codex; Claude-only mode supported. Linear is SSoT; artifacts are AI-readable markdown.",
       "source": {
         "source": "github",
         "repo": "Forth-AI/forthai-harness",
-        "ref": "v0.8.0",
-        "sha": "fdbf892afa71f538b41c8666261392868d873cc0"
+        "ref": "v0.14.0",
+        "sha": "1c716f4b3f56be600a998bc8999189ed5facd2a4"
       },
       "category": "development",
       "keywords": [
