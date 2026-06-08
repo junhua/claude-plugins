@@ -44,12 +44,12 @@
     },
     {
       "name": "forth-ai-harness",
-      "description": "Technical-cofounder-in-a-plugin for ForthAI Work. Thirteen slash commands take a rough idea from discovery to a merged, deployed, polished product: /finit /fbrainstorm /fspec /fdesign /fbuild /fpolish /ftest /ffix /flaunch /fautopilot /fretro /fdream /fhelp. Three lifecycles (Build/Fix/Hotfix) auto-routed from /goal; every PR passes a mandatory Codex review gate (0 P0+P1+APPROVE). /fautopilot is an AIPA autopilot run-loop with an engine-evaluated READ\u2192DRY_RUN\u2192COMMIT two-phase-write gate (human approval non-bypassable). Four on-demand domain packs (AIPA, enterprise-integration ERP/CRM connectors, comms-platforms WhatsApp/Telegram/Slack/WeChat-Work/Lark, finance intl+China) plug in with zero always-loaded cost. Optional Claude+Codex dual-AI via --codex; Claude-only mode supported. GitHub is SSoT (Milestones + Issues); artifacts are AI-readable markdown.",
+      "description": "Technical-cofounder-in-a-plugin for ForthAI Work. Seventeen slash commands carry a rough idea from discovery to a merged, deployed, polished product: /finit /fbrainstorm /fspec /fdesign /fbuild /fpolish /ftest /ffix /flaunch /fship, plus /fautopilot (AIPA autopilot), /fverify (PO dashboard + verify mode), /fretro and /fdream (cross-project learning), daily-ritual /fgm /fgn, and /fhelp. Each command is a convergence loop with polish-exhaustion enforced, optionally pairing Claude with Codex via --codex (full Claude-only mode supported). /fautopilot is an AIPA run-loop with an engine-evaluated READ\u2192DRY_RUN\u2192COMMIT two-phase-write gate (human approval non-bypassable). On-demand domain packs (AIPA, enterprise-integration ERP/CRM connectors, comms-platforms WhatsApp/Telegram/Slack/WeChat-Work/Lark, finance intl+China) plug in with zero always-loaded cost. GitHub is SSoT (Milestones + Issues); artifacts are AI-readable markdown.",
       "source": {
         "source": "github",
         "repo": "Forth-AI/forthai-harness",
-        "ref": "v0.14.1",
-        "sha": "21f28f4660a84449c0e7d6c4d04762b104efb85f"
+        "ref": "v0.21.1",
+        "sha": "1cd480dbd0a125b0441490f0caf2dbd0daf74fb7"
       },
       "category": "development",
       "keywords": [
@@ -62,7 +62,7 @@
         "claude-codex-collaboration",
         "dual-ai",
         "claude-only-mode",
-        "linear-ssot",
+        "github-ssot",
         "playwright-bdd",
         "production-readiness",
         "ai-readiness",
