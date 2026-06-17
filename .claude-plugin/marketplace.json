@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "super-ralph",
-      "description": "Design-first autonomous development workflow. /design produces implementation-ready epics with [STORY]/[BE]/[FE]/[INT] sub-issues. v0.11.0 adds --local mode (write entire plan to a single markdown file, skip GitHub) and /improve-design (single-prompt adjustments to existing designs). Fire-and-forget build \u2192 review \u2192 verify \u2192 release pipelines. Domain-aware repair with hotfix flow.",
+      "description": "Design-first autonomous development workflow. /design produces implementation-ready epics with [STORY]/[BE]/[FE]/[INT] sub-issues. v0.11.0 adds --local mode (write entire plan to a single markdown file, skip GitHub) and /improve-design (single-prompt adjustments to existing designs). Fire-and-forget build → review → verify → release pipelines. Domain-aware repair with hotfix flow.",
       "source": {
         "source": "github",
         "repo": "junhua/super-ralph",
@@ -44,12 +44,12 @@
     },
     {
       "name": "forth-ai-harness",
-      "description": "Technical-cofounder-in-a-plugin for ForthAI Work. Eighteen slash commands carry a rough idea from discovery to a merged, deployed, polished product: /finit /fbrainstorm /fspec /fdesign /fbuild /fpolish /ftest /ffix /flaunch /fship, plus /fautopilot (AIPA autopilot), /fverify (PO dashboard + verify mode), /fretro and /fdream (cross-project learning), daily-ritual /fgm /fgn, /fdashboard (run the PO dashboard in local Docker), and /fhelp. Each command is a convergence loop with polish-exhaustion enforced, optionally pairing Claude with Codex via --codex (full Claude-only mode supported). /fautopilot is an AIPA run-loop with an engine-evaluated READ\u2192DRY_RUN\u2192COMMIT two-phase-write gate (human approval non-bypassable). On-demand domain packs (AIPA, enterprise-integration ERP/CRM connectors, comms-platforms WhatsApp/Telegram/Slack/WeChat-Work/Lark, finance intl+China) plug in with zero always-loaded cost. GitHub is SSoT (Milestones + Issues); artifacts are AI-readable markdown.",
+      "description": "Technical-cofounder-in-a-plugin for ForthAI Work. Eighteen slash commands carry a rough idea from discovery to a merged, deployed, polished product: /finit /fbrainstorm /fspec /fdesign /fbuild /fpolish /ftest /ffix /flaunch /fship, plus /fautopilot (AIPA autopilot), /fverify (PO dashboard + verify mode), /fretro and /fdream (cross-project learning), daily-ritual /fgm /fgn, /fdashboard (run the PO dashboard in local Docker), and /fhelp. Each command is a convergence loop with polish-exhaustion enforced, optionally pairing Claude with Codex via --codex (full Claude-only mode supported). /fautopilot is an AIPA run-loop with an engine-evaluated READ→DRY_RUN→COMMIT two-phase-write gate (human approval non-bypassable). On-demand domain packs (AIPA, enterprise-integration ERP/CRM connectors, comms-platforms WhatsApp/Telegram/Slack/WeChat-Work/Lark, finance intl+China) plug in with zero always-loaded cost. GitHub is SSoT (Milestones + Issues); artifacts are AI-readable markdown.",
       "source": {
         "source": "github",
         "repo": "Forth-AI/forthai-harness",
-        "ref": "v0.29.0",
-        "sha": "a90bf4a417d8bed92f21e6d8e99eef26dc21b9eb"
+        "ref": "v0.30.0",
+        "sha": "7a6a48e098d2f113392636adf7974df97cbd274e"
       },
       "category": "development",
       "keywords": [
