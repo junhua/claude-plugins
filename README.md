@@ -31,16 +31,16 @@ Design-first autonomous development workflow.
 
 ### forth-ai-harness
 
-Technical-cofounder-in-a-plugin. Twelve slash commands take a rough idea from "I want a thing that does X" to a merged, deployed, polished product — and the plugin learns from every shipped task to improve itself.
+A product-lifecycle harness for a solo founder plus AI engineering. The human owns product decisions and validates at product level; agents do everything else. Every feature travels one path: a one-page contract in the human's own words, a locked-test build, an independent verification with per-criterion evidence, and a gated ship.
 
-- Pipeline: `/finit` (one-time per project) → `/fbrainstorm` → `/fspec` → `/fdesign` → `/fbuild` → `/fpolish` → `/ftest` → `/ffix` → `/flaunch`. Plus `/fretro`, `/fdream`, `/fhelp`. Run `/fhelp` after install for a plain-English guide to all 12 commands.
-- Every command is a **convergence loop with polish-exhaustion enforced**. Each iteration must list 3 polish-could-be-better items and decide fix-now / defer-to-NEXT.md / accept-with-reason before declaring converged. Never fakes success.
-- **Dual-AI mode (optional).** Pass `--codex` to any command for a Claude + Codex collaboration: Claude moves fast, Codex (slow + careful) does the second pass. Read-only phases run Codex in parallel; write phases isolate Codex in a worktree; `/flaunch` runs Codex synchronously as the final pre-merge audit. Works in **Claude-only mode** if Codex isn't installed — `/finit` detects your environment and configures the right mode.
-- **Cross-project memory layer (v0.2.0+).** Each `/flaunch` writes a per-task `summary.json` to `~/.claude/forth-ai-harness-memory/` and auto-syncs to a private central repo. `/fretro` distills patterns across all your projects; `/fdream` reads those patterns and proposes plugin improvements with semver-correct version bumps (and with `--apply` commits them). Three-layer redaction prevents secrets from ever leaving your machine.
-- **Spec-driven, behavior-driven, subagent-driven.** No code is written until `/fspec` checks a Gherkin AC + NFR + invariants spec into Linear. Gherkin compiles 1:1 to deterministic Playwright tests. Every phase fans out to fresh-context subagents. Linear is the single source of truth; artifacts are AI-readable markdown with YAML frontmatter and stable semantic tags.
-- **Gated launch.** 7 hard gates (authorship, Linear contract, protected-branch, CI green, working-tree clean, Codex audit, optional human-approval label) must all pass before `/flaunch` merges.
+- **Six commands, two human moments.** `/fspec` (interview → one-page contract, EARS acceptance criteria — **you approve**) → `/fbuild` (worktree, red-lock-green TDD, fresh-context evaluator, PR) → `/fverify` (independent verifier exercises every criterion on the real stack, mocks off — local by default or a deployed staging host via `--staging` with gated magic-OTP login) → `/fship` (UAT checklist, merge, deploy verification — **you accept the evidence**). Plus `/fstatus` (read-only sweep of what's waiting on you vs. in flight vs. shipped) and `/flessons` (turns recent ships into at most five concrete process diffs, applied only with your approval).
+- **The law: no `n/a` escapes.** Nothing merges until the feature has been exercised on a real running stack by an agent that did not build it, with an evidence bundle a human can inspect. Environment unavailable means status `blocked`, never a silent pass.
+- **Hook-enforced, not prose-enforced.** `test-lock.sh` blocks editing test files after the red checkpoint; `bash-gates.sh` blocks AI-authored commit trailers and blocks merging harness PRs until evidence is posted and accepted; `build-stop-gate.sh` blocks an agent from ending its turn mid-build with failing checks.
+- **Builder ≠ verifier.** Different agents, different context — the verifier never reads the implementation, only the contract and the running app.
+- **GitHub is SSoT.** Contracts, evidence bundles, and state (`fh:contract` → `fh:approved` → `fh:building` → `fh:evidence` → `fh:accepted` → closed/shipped) live on the issue itself. A prose `LESSONS.md` in your project compounds learning across runs.
+- **Domain skills included.** `agent-layer` and `memory-layer` evaluator skills load automatically for stories touching the WorkOS agent layer or DIKW memory pipeline.
 
-After install, run `/finit` once per repo to detect your environment (Codex, bun, gh, Linear MCP) and write per-project config to `.claude/forth-ai-harness.config.json`.
+First run of `/fspec` or `/fbuild` interviews you and writes per-project config to `.claude/fh.config.json` — nothing is guessed silently.
 
 - Source: [Forth-AI/forthai-harness](https://github.com/Forth-AI/forthai-harness)
 - Category: development
