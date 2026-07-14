@@ -44,12 +44,12 @@
     },
     {
       "name": "forth-ai-harness",
-      "description": "WorkOS-native product-lifecycle harness. Six commands carry a feature from idea to shipped, hook-enforced at every gate: /fspec (interview -> one-page bilingual contract, EARS acceptance criteria, human approval gate), /fbuild (worktree, red-lock-green TDD, fresh-context evaluator, real-stack smoke), /fverify (independent verifier exercises every criterion on the live stack, mocks off, evidence bundle + UAT checklist), /fship (human acceptance, merge and authorship gates, deploy verification), /fstatus (read-only sweep), /flessons (codify recurring lessons). The law: nothing merges without real-stack, per-criterion evidence from an agent that did not build the feature -- no n/a escapes. Domain skills for the WorkOS agent layer and DIKW memory layer ship in the box. GitHub is SSoT; a prose LESSONS.md compounds learning across runs.",
+      "description": "WorkOS-native product-lifecycle harness. Six commands carry a feature from idea to shipped, hook-enforced at every gate: /fspec (interview -> one-page bilingual contract, EARS acceptance criteria, human approval gate), /fbuild (worktree, red-lock-green TDD, fresh-context evaluator, real-stack smoke), /fverify (independent verifier exercises every criterion on the live stack -- local by default, or a real deployed staging host via --staging with a gated magic-otp login -- mocks off, evidence bundle + UAT checklist), /fship (human acceptance, merge and authorship gates, deploy verification), /fstatus (read-only sweep), /flessons (codify recurring lessons). The law: nothing merges without real-stack, per-criterion evidence from an agent that did not build the feature -- no n/a escapes. Domain skills for the WorkOS agent layer and DIKW memory layer ship in the box. GitHub is SSoT; a prose LESSONS.md compounds learning across runs.",
       "source": {
         "source": "github",
         "repo": "Forth-AI/forthai-harness",
-        "ref": "v1.0.0",
-        "sha": "1cde0ee0385f05f55509dc7351658bbee7d57ee7"
+        "ref": "v1.1.0",
+        "sha": "f9ea1c24f89889e502a399088ad0f50ab73e5dd1"
       },
       "category": "development",
       "keywords": [
@@ -67,6 +67,7 @@
         "agent-layer",
         "memory-layer",
         "dikw",
+        "staging-verification",
         "forthai"
       ]
     }
