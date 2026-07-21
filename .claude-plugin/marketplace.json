@@ -44,12 +44,12 @@
     },
     {
       "name": "forth-ai-harness",
-      "description": "WorkOS-native product-lifecycle harness. Six commands carry a feature from idea to shipped, hook-enforced at every gate: /fspec (interview -> one-page bilingual contract, EARS acceptance criteria, human approval gate), /fbuild (worktree, red-lock-green TDD, fresh-context evaluator, real-stack smoke), /fverify (independent verifier exercises every criterion on the live stack -- local by default, or a real deployed staging host via --staging with a gated magic-otp login -- mocks off, evidence bundle + UAT checklist), /fship (human acceptance, merge and authorship gates, deploy verification), /fstatus (read-only sweep), /flessons (codify recurring lessons). The law: nothing merges without real-stack, per-criterion evidence from an agent that did not build the feature -- no n/a escapes. Domain skills for the WorkOS agent layer and DIKW memory layer ship in the box. GitHub is SSoT; a prose LESSONS.md compounds learning across runs.",
+      "description": "WorkOS-native product-lifecycle harness. Six commands carry a feature from idea to shipped, hook-enforced at every gate: /fspec (interview -> one-page bilingual contract, EARS acceptance criteria, human approval gate), /fbuild (worktree, red-lock-green TDD with a hard AC-coverage gate, concurrent builds isolated per issue, a bug fast lane that skips the /fspec bounce, fresh-context evaluator), /fverify (independent verifier exercises every criterion on the live stack -- local by default, or a real deployed staging host via --staging with a gated magic-otp login -- mocks off, a product-only UAT checklist plus a technical acceptance brief for the tech lead), /fship (two-lens human acceptance -- product and technical, each handoff-able -- merge and authorship gates, deploy verification), /fstatus (read-only sweep naming who each item is waiting on, concurrent builds and coverage included), /flessons (proposes lesson diffs as real, previewable edits, applied only with your approval). The law: nothing merges without real-stack, per-criterion evidence from an agent that did not build the feature -- no n/a escapes, and a human is never asked to re-execute what an agent already proved. Domain skills for the WorkOS agent layer and DIKW memory layer ship in the box. GitHub is SSoT; a prose LESSONS.md compounds learning across runs.",
       "source": {
         "source": "github",
         "repo": "Forth-AI/forthai-harness",
-        "ref": "v1.2.0",
-        "sha": "74f9d68be322928bc5647585604aa4b11c653822"
+        "ref": "v1.5.0",
+        "sha": "4163447baa2e4d7ce74c944c470d8ba29ad016dd"
       },
       "category": "development",
       "keywords": [
@@ -58,10 +58,15 @@
         "ears-acceptance-criteria",
         "human-approval-gate",
         "test-driven-development",
+        "ac-coverage-gate",
+        "concurrent-builds",
+        "bug-fast-lane",
         "independent-verification",
         "hook-enforced",
         "evidence-bundle",
         "uat",
+        "technical-acceptance",
+        "two-lens-accept",
         "github-ssot",
         "workos",
         "agent-layer",
