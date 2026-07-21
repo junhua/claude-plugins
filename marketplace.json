@@ -1,0 +1,80 @@
+{
+  "name": "junhua-plugins",
+  "owner": {
+    "name": "junhua",
+    "email": "junhua.viva@gmail.com"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by junhua",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "super-ralph",
+      "description": "Design-first autonomous development workflow. /design produces implementation-ready epics with [STORY]/[BE]/[FE]/[INT] sub-issues. v0.11.0 adds --local mode (write entire plan to a single markdown file, skip GitHub) and /improve-design (single-prompt adjustments to existing designs). Fire-and-forget build \u2192 review \u2192 verify \u2192 release pipelines. Domain-aware repair with hotfix flow.",
+      "source": {
+        "source": "github",
+        "repo": "junhua/super-ralph",
+        "ref": "v0.14.2",
+        "sha": "e1cf62f6a14bfc23bf2644b421171f5c72aabea7"
+      },
+      "category": "development",
+      "keywords": [
+        "ralph-loop",
+        "superpowers",
+        "autonomous",
+        "fire-and-forget",
+        "tdd",
+        "pr-review",
+        "browser-verification",
+        "release",
+        "e2e",
+        "epic",
+        "staging",
+        "hotfix",
+        "domain-aware",
+        "repair-pipeline",
+        "product-design",
+        "local-mode",
+        "improve-design",
+        "brainstorm",
+        "status-dashboard",
+        "auto-init"
+      ]
+    },
+    {
+      "name": "forth-ai-harness",
+      "description": "WorkOS-native product-lifecycle harness. Six commands carry a feature from idea to shipped, hook-enforced at every gate: /fspec (interview -> one-page bilingual contract, EARS acceptance criteria, human approval gate), /fbuild (worktree, red-lock-green TDD with a hard AC-coverage gate, concurrent builds isolated per issue, a bug fast lane that skips the /fspec bounce, fresh-context evaluator), /fverify (independent verifier exercises every criterion on the live stack -- local by default, or a real deployed staging host via --staging with a gated magic-otp login -- mocks off, a product-only UAT checklist plus a technical acceptance brief for the tech lead), /fship (two-lens human acceptance -- product and technical, each handoff-able -- merge and authorship gates, deploy verification), /fstatus (read-only sweep naming who each item is waiting on, concurrent builds and coverage included), /flessons (proposes lesson diffs as real, previewable edits, applied only with your approval). The law: nothing merges without real-stack, per-criterion evidence from an agent that did not build the feature -- no n/a escapes, and a human is never asked to re-execute what an agent already proved. Domain skills for the WorkOS agent layer and DIKW memory layer ship in the box. GitHub is SSoT; a prose LESSONS.md compounds learning across runs.",
+      "source": {
+        "source": "github",
+        "repo": "Forth-AI/forthai-harness",
+        "ref": "v1.6.0",
+        "sha": "7b103757725e6500c1c2eceb438fb1dced9ae09a"
+      },
+      "category": "development",
+      "keywords": [
+        "product-lifecycle",
+        "spec-driven-development",
+        "ears-acceptance-criteria",
+        "human-approval-gate",
+        "test-driven-development",
+        "ac-coverage-gate",
+        "concurrent-builds",
+        "bug-fast-lane",
+        "independent-verification",
+        "hook-enforced",
+        "evidence-bundle",
+        "uat",
+        "technical-acceptance",
+        "two-lens-accept",
+        "github-ssot",
+        "workos",
+        "agent-layer",
+        "memory-layer",
+        "dikw",
+        "staging-verification",
+        "forthai"
+      ]
+    }
+  ]
+}
