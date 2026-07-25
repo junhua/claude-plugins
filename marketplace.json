@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "super-ralph",
-      "description": "Design-first autonomous development workflow. /design produces implementation-ready epics with [STORY]/[BE]/[FE]/[INT] sub-issues. v0.11.0 adds --local mode (write entire plan to a single markdown file, skip GitHub) and /improve-design (single-prompt adjustments to existing designs). Fire-and-forget build \u2192 review \u2192 verify \u2192 release pipelines. Domain-aware repair with hotfix flow.",
+      "description": "Design-first autonomous development workflow. /design produces implementation-ready epics with [STORY]/[BE]/[FE]/[INT] sub-issues. v0.11.0 adds --local mode (write entire plan to a single markdown file, skip GitHub) and /improve-design (single-prompt adjustments to existing designs). Fire-and-forget build → review → verify → release pipelines. Domain-aware repair with hotfix flow.",
       "source": {
         "source": "github",
         "repo": "junhua/super-ralph",
@@ -48,8 +48,8 @@
       "source": {
         "source": "github",
         "repo": "Forth-AI/forthai-harness",
-        "ref": "v1.8.0",
-        "sha": "42808fe39659a193b008d4f59ebf5f8bcc7b3c4c"
+        "ref": "v1.10.0",
+        "sha": "69e227db1457033dd5b133994edf8228b3cb07a8"
       },
       "category": "development",
       "keywords": [

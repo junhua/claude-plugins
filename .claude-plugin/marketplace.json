@@ -48,8 +48,8 @@
       "source": {
         "source": "github",
         "repo": "Forth-AI/forthai-harness",
-        "ref": "v1.8.0",
-        "sha": "42808fe39659a193b008d4f59ebf5f8bcc7b3c4c"
+        "ref": "v1.10.0",
+        "sha": "69e227db1457033dd5b133994edf8228b3cb07a8"
       },
       "category": "development",
       "keywords": [
